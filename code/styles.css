@@ -1,0 +1,302 @@
+/* Body styling */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+nav.container-fluid {
+    position: sticky;
+    top: 0;
+    background-color: rgba(18, 18, 18, 0.9);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-center {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+/* Hero Section */
+.hero-container {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+    background: url('download (2).jpg') no-repeat center center/cover;
+    min-height: 80vh;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.rent-now-btn {
+    background-color: gold;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.rent-now-btn:hover {
+    background-color: #d4af37;
+}
+
+/* Car Information Card */
+.car-card {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.car-card-image {
+    width: 100%;
+    border-bottom: 2px solid gold;
+}
+
+.car-card-details h2 {
+    font-size: 1.2rem;
+    color: gold;
+    margin: 0.5rem 0;
+}
+
+.car-card-details p {
+    font-size: 0.85rem;
+    color: #dddddd;
+}
+
+/* Booking Form */
+.booking-form {
+    width: 100%;
+    max-width: 1100px; /* Increased width for a single-row layout */
+    background-color: #252525;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 1rem;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.toggle-btn {
+    padding: 0.4rem 1rem;
+    background-color: #444;
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn.active {
+    background-color: gold;
+    color: black;
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
+/* Horizontal Form Layout */
+.booking-form form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 1.2fr; /* Five fields plus a larger button */
+    gap: 1rem;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: gold;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="date"],
+.booking-form input[type="time"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Book Now Button Styling */
+/* Adjusting the width of the Book Now button */
+.book-now-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    min-width: 150px; /* Ensures the button is wide enough */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.book-now-btn .icon {
+    margin-left: 0.5rem;
+}
+
+.book-now-btn:hover {
+    background-color: #e6a13d;
+}
+
+/* General Styling */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+nav.container-fluid {
+    background-color: #000000;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Auth Section Styling */
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.auth-content {
+    background-color: #252525;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.auth-content h2 {
+    color: gold;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.auth-content p {
+    color: #cccccc;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Form Styling */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-form label {
+    font-size: 0.9rem;
+    color: gold;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.auth-btn {
+    background-color: gold;
+    color: black;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #e6a13d;
+}
+
+/* Switch Auth Link */
+.switch-auth {
+    margin-top: 1rem;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.switch-auth a {
+    color: gold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.switch-auth a:hover {
+    color: #e6a13d;
+}

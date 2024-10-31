@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up | Luxury Car Rentals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar for consistency -->
+<nav class="container-fluid" id="navbar">
+    <ul class="nav-center">
+        <li><a href="index.html" style="color: gold;"><strong>Luxury Car Rentals</strong></a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <!-- Sign-Up Form Section -->
+    <section class="auth-section">
+        <div class="auth-content">
+            <h2>Create an Account</h2>
+            <p>Join us to enjoy the finest luxury cars on the road.</p>
+            <form class="auth-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+                <button type="submit" class="btn auth-btn">Sign Up</button>
+                <p class="switch-auth">Already have an account? <a href="login.html">Log In</a></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
