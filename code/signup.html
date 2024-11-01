@@ -22,7 +22,7 @@
         <div class="auth-content">
             <h2>Create an Account</h2>
             <p>Join us to enjoy the finest luxury cars on the road.</p>
-            <form class="auth-form">
+            <form class="auth-form" onsubmit="redirectToUpload(event)">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Choose a username" required>
 
@@ -35,9 +35,13 @@
                 <button type="submit" class="btn auth-btn">Sign Up</button>
                 <p class="switch-auth">Already have an account? <a href="login.html">Log In</a></p>
             </form>
+
+            <!-- Link to Document Upload Page -->
+            <p><a href="document-upload.html" class="btn">Upload Documents</a></p>
         </div>
     </section>
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>

@@ -6,16 +6,17 @@
     <title>Luxury Car Rentals</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="path/to/font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="container-fluid" id="navbar">
+<nav class="container-fluid" id="navbar" role="navigation">
     <ul class="nav-left">
-        <li><a href="#" style="color: white;">About</a></li>
-        <li><a href="#vehicles" style="color: white;">Vehicles</a></li>
-        <li><a href="#booking" style="color: white;">Booking</a></li>
-        <li><a href="#contacts" style="color: white;">Contacts</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#vehicles">Vehicles</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contacts">Contacts</a></li>
     </ul>
     <ul class="nav-center">
         <li><a href="index.html" style="color: gold;"><strong>car</strong></a></li>
@@ -30,12 +31,12 @@
 <section class="hero-container">
     <div class="hero-overlay">
         <h1>Luxury car rental</h1>
-        <a href="#booking" class="btn rent-now-btn">Rent Now</a>
+        <button type="button" onclick="window.location.href='car-listing.html'" class="btn rent-now-btn">Rent Now</button>
     </div>
 
     <!-- Car Information Card -->
     <div class="car-card">
-        <img src="rs7.JPG" alt="Luxury Car" class="car-card-image">
+        <img src="images/rs7.JPG" alt="Luxury Car" class="car-card-image" loading="lazy">
         <div class="car-card-details">
             <h2>$1600/day</h2>
             <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload Documents | Luxury Car Rentals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar for consistency -->
+<nav class="container-fluid" id="navbar">
+    <ul class="nav-center">
+        <li><a href="index.html" style="color: gold;"><strong>Luxury Car Rentals</strong></a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <!-- Document Upload Section -->
+    <section class="auth-section">
+        <div class="auth-content">
+            <h2>Upload Government Documents</h2>
+            <p>Please upload a valid driver’s license or any official ID for verification.</p>
+            <form class="upload-form" enctype="multipart/form-data" action="upload.php" method="POST">
+                <label for="document">Choose Document</label>
+                <input type="file" id="document" name="document" accept=".pdf, .jpg, .jpeg, .png" required>
+                
+                <button type="submit" class="btn auth-btn">Upload Document</button>
+                <p class="upload-note">*Accepted formats: PDF, JPG, JPEG, PNG</p>
+            </form>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
